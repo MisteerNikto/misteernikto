@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Портфолио</title>
+<meta name="description" content="Мультидисциплинарное портфолио: код, электроника, фотография, тексты">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;600&family=Literata:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap&subset=cyrillic" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-sec="dev">
+<div class="bg-glow"></div>
+
+<header class="site-header">
+  <div class="wrap flex items-center justify-between h-16">
+    <a href="#" id="brand" class="brand">Портфолио</a>
+    <div class="dropdown" id="dropdown">
+      <button id="dd-btn" aria-haspopup="true" aria-expanded="false" aria-controls="dd-menu">
+        <i id="dd-icon" class="fa-solid fa-code"></i>
+        <span id="dd-label">Загрузка…</span>
+        <i class="fa-solid fa-chevron-down chev"></i>
+      </button>
+      <ul id="dd-menu"></ul>
+    </div>
+  </div>
+</header>
+
+<main class="wrap py-10 sm:py-16">
+  <div id="view"></div>
+</main>
+
+<footer class="wrap footer">
+  <span id="foot-name"></span>
+  <nav id="foot-links" class="flex gap-4"></nav>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="lb-btn lb-close" id="lb-close" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="Назад"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lb-img" alt="">
+  <button class="lb-btn lb-next" id="lb-next" aria-label="Вперёд"><i class="fa-solid fa-chevron-right"></i></button>
+  <p id="lb-cap"></p>
+</div>
+
+<div id="reader" role="dialog" aria-modal="true" aria-label="Чтение">
+  <div class="rd-bar"><i id="rd-progress"></i></div>
+  <div class="rd-tools">
+    <button class="lb-btn" id="rd-minus" aria-label="Меньше шрифт"><i class="fa-solid fa-font text-xs"></i></button>
+    <button class="lb-btn" id="rd-plus" aria-label="Больше шрифт"><i class="fa-solid fa-font"></i></button>
+    <button class="lb-btn" id="rd-close" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="rd-scroll"><article class="rd-page" id="rd-body"></article></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

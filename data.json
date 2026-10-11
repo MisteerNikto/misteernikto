@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "name": "Имя Фамилия",
+    "github": "https://github.com/your-username",
+    "telegram": "https://t.me/your_username",
+    "email": "hello@example.com"
+  },
+  "sections": {
+    "dev": {
+      "label": "Программист",
+      "title": "Код и проекты",
+      "subtitle": "Веб-сервисы, утилиты и инструменты, которые я написал. Весь код открыт на GitHub.",
+      "stack": ["Python", "JavaScript", "TypeScript", "C++", "Rust", "Docker", "PostgreSQL", "Linux"],
+      "projects": [
+        {
+          "title": "TaskFlow",
+          "description": "Канбан-доска с синхронизацией в реальном времени и офлайн-режимом.",
+          "tags": ["TypeScript", "WebSocket", "PostgreSQL"],
+          "image": "https://picsum.photos/seed/dev1/800/500",
+          "github": "https://github.com/your-username/taskflow",
+          "demo": "https://example.com/taskflow"
+        },
+        {
+          "title": "LogLens",
+          "description": "Консольная утилита для разбора и подсветки больших логов. Обрабатывает гигабайты за секунды.",
+          "tags": ["Rust", "CLI"],
+          "image": "https://picsum.photos/seed/dev2/800/500",
+          "github": "https://github.com/your-username/loglens"
+        },
+        {
+          "title": "Telegram-бот «Напоминалка»",
+          "description": "Бот с повторяющимися напоминаниями, часовыми поясами и голосовым вводом.",
+          "tags": ["Python", "aiogram", "Redis"],
+          "image": "https://picsum.photos/seed/dev3/800/500",
+          "github": "https://github.com/your-username/remind-bot"
+        }
+      ]
+    },
+    "hardware": {
+      "label": "Схемотехник",
+      "title": "Электроника и схемы",
+      "subtitle": "Разработка плат, прошивки для микроконтроллеров и измерительные приборы.",
+      "projects": [
+        {
+          "title": "Метеостанция на ESP32",
+          "description": "Датчики температуры, влажности и давления, питание от солнечной панели, передача данных по Wi-Fi.",
+          "mcu": "ESP32-S3",
+          "components": ["BME280", "TP4056", "AMS1117-3.3", "SSD1306"],
+          "image": "https://picsum.photos/seed/pcb1/800/500",
+          "schematic": "https://picsum.photos/seed/schem1/1400/900",
+          "datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+          "github": "https://github.com/your-username/esp32-weather"
+        },
+        {
+          "title": "Лабораторный блок питания 0–30 В",
+          "description": "Линейный стабилизатор с цифровой индикацией и ограничением тока. Двухслойная плата, разведена в KiCad.",
+          "mcu": "ATmega328P",
+          "components": ["LM317", "INA219", "IRFZ44N", "OLED 0.96"],
+          "image": "https://picsum.photos/seed/pcb2/800/500",
+          "schematic": "https://picsum.photos/seed/schem2/1400/900"
+        },
+        {
+          "title": "USB-логический анализатор",
+          "description": "8 каналов, частота до 24 МГц, совместим с sigrok и PulseView.",
+          "mcu": "STM32F103",
+          "components": ["CY7C68013A", "74LVC245", "USB-C"],
+          "image": "https://picsum.photos/seed/pcb3/800/500",
+          "schematic": "https://picsum.photos/seed/schem3/1400/900",
+          "github": "https://github.com/your-username/usb-la"
+        }
+      ]
+    },
+    "photo": {
+      "label": "Фотограф",
+      "title": "Фотографии",
+      "subtitle": "Города, природа и люди. Нажмите на снимок, чтобы открыть его на весь экран.",
+      "photos": [
+        { "src": "https://picsum.photos/seed/ph1/1600/1100", "thumb": "https://picsum.photos/seed/ph1/700/480", "title": "Утренний туман", "caption": "Побережье, 35 мм, f/8", "category": "Природа" },
+        { "src": "https://picsum.photos/seed/ph2/1100/1600", "thumb": "https://picsum.photos/seed/ph2/700/1000", "title": "Старый город", "caption": "Улочка после дождя", "category": "Город" },
+        { "src": "https://picsum.photos/seed/ph3/1600/1000", "thumb": "https://picsum.photos/seed/ph3/700/440", "title": "Золотой час", "caption": "Последний свет над полем", "category": "Природа" },
+        { "src": "https://picsum.photos/seed/ph4/1200/1500", "thumb": "https://picsum.photos/seed/ph4/700/880", "title": "Портрет", "caption": "Естественный свет из окна", "category": "Люди" },
+        { "src": "https://picsum.photos/seed/ph5/1600/1200", "thumb": "https://picsum.photos/seed/ph5/700/520", "title": "Ночные огни", "caption": "Выдержка 4 секунды", "category": "Город" },
+        { "src": "https://picsum.photos/seed/ph6/1200/1600", "thumb": "https://picsum.photos/seed/ph6/700/930", "title": "Лес", "caption": "Свет сквозь ветви", "category": "Природа" }
+      ]
+    },
+    "writer": {
+      "label": "Писатель",
+      "title": "Тексты",
+      "subtitle": "Рассказы, проза и стихи. Текст поддерживает Markdown: абзацы, курсив, цитаты.",
+      "works": [
+        {
+          "title": "Последний маяк",
+          "type": "Рассказ",
+          "kind": "story",
+          "date": "март 2025",
+          "excerpt": "Смотритель маяка получает письмо, которого ждал сорок лет, но уже не уверен, что хочет его читать.",
+          "text": "Письмо пришло в четверг, когда море было особенно тихим.\n\nТимофей долго держал конверт в руках, не вскрывая. Сорок лет он вглядывался в горизонт, и теперь горизонт сам прислал ему ответ.\n\n> Некоторые вещи лучше не знать. Но только после того, как узнаешь.\n\nОн поднялся по винтовой лестнице, зажёг лампу и сел у окна. Внизу ворочались волны, и он подумал, что, может быть, читать вовсе не обязательно.\n\n***\n\nУтром он всё-таки вскрыл конверт."
+        },
+        {
+          "title": "Стабилизатор",
+          "type": "Поэзия",
+          "kind": "poem",
+          "date": "2025",
+          "excerpt": "Короткое стихотворение о ночном городе, паяльнике и спокойном токе.",
+          "text": "Ночь собирает город по огням,\nкак схему, где не хватает одного звена.\nЯ паяю тишину к своим словам,\nи вспыхивает окно, и в нём весна.\n\nНе всё, что греется, горит.\nНе всё, что гаснет, — навсегда.\nПока в груди стабилизатор говорит\nспокойным током: «Подожди»."
+        },
+        {
+          "title": "Заметки о тишине",
+          "type": "Проза",
+          "kind": "story",
+          "date": "январь 2025",
+          "excerpt": "Размышление о том, как звучит город, когда в нём выключают свет.",
+          "text": "Тишина не бывает пустой. Если прислушаться, в ней можно различить холодильник на соседней кухне, шаги этажом выше, далёкую электричку.\n\nГород без света звучит иначе. Он *дышит*, и каждый его звук становится отдельным событием.\n\nДлинные тексты удобнее хранить в отдельных файлах. Вместо поля `text` укажите `file`, например `texts/silence.md`."
+        }
+      ]
+    }
+  }
+}
